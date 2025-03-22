@@ -8,5 +8,8 @@ export default defineConfig({
   build: {
     outDir: '../dist',  // Çıktı dist klasörüne
     emptyOutDir: true,
+    rollupOptions: {
+      external: ['chart.js/auto']
+    }
   }
 });
