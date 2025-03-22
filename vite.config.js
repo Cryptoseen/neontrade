@@ -1,13 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default defineConfig({
-  plugins: [react()],
-  root: './', // ✅ Ana dizini işaret et
+  plugins: [svelte()],
+  base: '/', // ✅ Kök yolu doğru ayarlamak için
   build: {
     outDir: 'dist',
     rollupOptions: {
       input: './public/index.html' // ✅ Doğru giriş noktası
     }
   }
-})
+});
