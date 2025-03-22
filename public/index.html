@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NeonTrade Journal</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: 'class' }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/@heroicons/v2.0.18/24/outline/index.js"></script>
   </head>
-  <body class="dark:bg-gray-900 h-full">
+  <body class="dark:bg-gray-900 h-full transition-colors duration-300">
     <div id="app"></div>
+    <!-- index.html public klasöründe olduğundan, src/main.js'ye ulaşmak için ../src/main.js yazıyoruz -->
     <script type="module" src="../src/main.js"></script>
   </body>
 </html>
