@@ -1,15 +1,15 @@
 {
   "name": "neontrade-journal",
   "version": "1.0.0",
-  "description": "Trading işlemlerini takip etmek için Svelte uygulaması",
+  "description": "Modern Trade Günlüğü",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-  "chart.js": "^4.2.1", 
-  "svelte": "^3.59.0"
+    "chart.js": "^4.2.1",
+    "svelte": "^3.59.0"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
