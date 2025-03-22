@@ -3,11 +3,10 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default defineConfig({
   plugins: [svelte()],
-  base: '/', // ✅ Kök yolu doğru ayarlamak için
+  root: 'public',       // Build için kök dizin olarak public klasörünü belirtiyoruz
+  base: './',           // Tüm yolların göreceli olmasını sağlıyoruz
   build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: './public/index.html' // ✅ Doğru giriş noktası
-    }
+    outDir: '../dist',  // Build çıktısını proje kök dizinine yakın dist klasörüne koyuyoruz
+    emptyOutDir: true,  // Her build öncesi dist klasörünü temizler
   }
 });
